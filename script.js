@@ -28,3 +28,12 @@ window.addEventListener("scroll", () => {
   }
   lastScroll = currentScroll;
 });
+
+// NAV SEARCH TOGGLE
+function toggleSearch(){
+  const search = document.getElementById("navSearch");
+  search.classList.toggle("active");
+  if(search.classList.contains("active")){
+    search.focus();
+  }
+}
