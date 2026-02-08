@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div></div>
+  <div class="menu">
+    <a href="#app">App</a>
+    <a href="#communities">Communities</a>
+    <a href="#services">Services</a>
+    <a class="nav-btn" href="#" onclick="openAuth()">Get started</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>A better you<br>every day</h1>
+    <p>
+      Be part of a powerful platform that helps you learn,
+      connect, and grow through communities and technology.
+    </p>
+    <div class="hero-buttons">
+      <a href="#communities" class="btn-primary">Become a Member</a>
+      <a href="#app" class="btn-outline">Explore Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- APP -->
+<section id="app">
+  <h2 class="section-title">One Powerful App</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Community Chats</h3>
+      <p>Focused discussions with like-minded people.</p>
+    </div>
+    <div class="card">
+      <h3>Live Events</h3>
+      <p>Sessions, workshops, and expert guidance.</p>
+    </div>
+    <div class="card">
+      <h3>Premium Content</h3>
+      <p>Curated learning resources in one place.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITIES -->
+<section id="communities">
+  <h2 class="section-title">Popular Communities</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Tech Community</h3>
+      <p>85k+ members growing together.</p>
+    </div>
+    <div class="card">
+      <h3>AI & ML Hub</h3>
+      <p>Future-focused AI learners.</p>
+    </div>
+    <div class="card">
+      <h3>Career Growth</h3>
+      <p>Mentorship and career building.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="section-title">What We Offer</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Community Building</h3>
+      <p>Tools for creators to manage communities.</p>
+    </div>
+    <div class="card">
+      <h3>Learning Programs</h3>
+      <p>Skill-based growth programs.</p>
+    </div>
+    <div class="card">
+      <h3>Mentorship</h3>
+      <p>Learn from experienced mentors.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Start Your Journey Today</h2>
+  <a href="#" onclick="openAuth()">Join Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Demo Platform · Business Project
+</footer>
+
+<!-- LOGIN / SIGNUP MODAL -->
+<div class="auth-modal" id="authModal">
+  <div class="auth-box">
+    <span class="close" onclick="closeAuth()">×</span>
+
+    <h2 id="authTitle">Login</h2>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button class="auth-btn">Continue</button>
+
+    <p class="switch">
+      <span id="switchText">Don’t have an account?</span>
+      <a href="#" onclick="toggleAuth()">Sign up</a>
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
